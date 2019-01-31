@@ -5,7 +5,7 @@ Arene = Tk()#creer une fenetre
 Arene.title('Arene')#donner un nom à la fenetre
 Arene.geometry("500x500")#donner la taille de la fenetre
 #---------------------------------------------------------------------------------------------
-bouton = Button(Arene, text ="quiter",command=Arene.destroy)#creation d'un bouton
+bouton = Button(Arene, text ="Quitter",command=Arene.destroy)#creation d'un bouton
 bouton.pack()#inserer le bouton dans la fenetre
 #---------------------------------------------------------------------------------------------
 texte = Label(Arene, text = "FiveGuys")#creer un text
