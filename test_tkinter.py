@@ -1,4 +1,4 @@
-from tkinter import*
+from tkinter import *
 
 
 Arene = Tk()#creer une fenetre
