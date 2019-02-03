@@ -19,6 +19,13 @@ def changement_angle(robot, angle):
         
     robot.angle += angle
 
+def avancer (self, distance):
+    self.x+=m.cos(self.angle)*distance
+    self.x=round(self.x,5)
+    self.y-=m.sin(self.angle)*distance
+    self.y=round(self.y,5)
+
+
 #jeu de test:
 a=Robot(0,0,90)
 print (a.get_position()==(0,0))
@@ -40,3 +47,11 @@ changement_angle(a, -390)#-390° => -30°
 print(a.angle==90)#True resultat correct
 changement_angle(a, 0)#angle nul
 print(a.angle==90)#True resultat correct
+
+#jeu de test avancer
+b=Robot(0,0,0)
+avancer(b,5)
+print ((b.x)==5)
+changer_angle(b,-m.pi/2)
+avancer (b,5)
+print ((b.x==5) and (b.y==5))
