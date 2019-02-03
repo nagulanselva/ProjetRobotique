@@ -1,6 +1,6 @@
 def placer_obstacle(self,x,y,int forme):    #provisoire
-	if x<LONGUEUR && y<LARGEUR:
-		if Mat_Arene[x]!=1 && Mat_Arene[y]!=1: #selon le nom de la matrice de la classe Arène
+	if x<LONGUEUR and y<LARGEUR:
+		if Mat_Arene[x]!=1 and Mat_Arene[y]!=1: #selon le nom de la matrice de la classe Arène
 			if forme=1:
 				Obstacle._init_(self,x,y,1)
 			elif forme=2:
