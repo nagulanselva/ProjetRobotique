@@ -5,9 +5,9 @@ class Obstacle(object):
         self.forme = forme
         if self.forme == 1 : #carre
             self.largeur = self. longueur = 10
-        if self.forme == 2 : #rond
+        elif self.forme == 2 : #rond
             self.rayon = 10
-        if self.forme == 3 : #triangle
+        elif self.forme == 3 : #triangle
             self.base = self.hauteur = 10
         else :
             self.forme = 1
@@ -32,23 +32,23 @@ print(rond.get_position())
 print(triangle.get_position())
 print(inconnu.get_position())
 
-if carre.get_position() == 1 :
+if carre.get_forme() == 1 :
     print("C'est un carre")
 else :
     print("Il y a une erreur")
 
-if rond.get_position() == 2 :
+if rond.get_forme() == 2 :
     print("C'est un rond")
 else :
     print("Il y a une erreur")
 
-if carre.get_position() == 3 :
+if triangle.get_forme() == 3 :
     print("C'est un triangle")
 else :
     print("Il y a une erreur")
 
 if inconnu.get_position() == 1 :
-    print("C'est un carre")
+    print("C'est un carre par défaut")
 else :
     print("Il y a une erreur")
 
